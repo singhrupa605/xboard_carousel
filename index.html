@@ -1,16 +1,118 @@
-        <html>
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0" />
-        <title>Crio Feed</title>
-        <meta name="description" content="Crio Feed Website" />
-        <link rel="stylesheet" href="resources/css/index.css">
-        </head>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"
+    />
+    <title>Crio Feed</title>
+    <meta name="description" content="Crio Feed Website" />
+    <link rel="stylesheet" href="resources/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-        <body>
+  <body>
+    <div class="container" id="parent">
+      <nav class="navbar navbar-expand-sm navbar-light ps-3">
+        <a
+          class="navbar-brand"
+          href="https://s3-alpha-sig.figma.com/img/f7bd/9e49/0415345f962a3bb7ac70c38f0814c345?Expires=1648425600&Signature=NRt8zpojeKnw0-9MU8OlUKCaPqDcVIJpxj1ONAu1ym4dwptGw-ulGFvslYm2gNK364Z7o-k7uH93Maztwz~DtoPDMB2e0nPoHRXVx781HOMbfBNPuM33HOHh0WU2IfQAM6zYVU5Mopsg4DjsKPkez-GBSzgTPNXVHDu5wFRb6KEVcfzVdLDGLVMOekPNzKd4JXbrvUh-y~UrALyL1fBWOnkAaEsgFYFpgOFtcgGyfaAX-m4~z1FWbPY~-v7F1qyCQLWiIbXneqRozSxFzzYVXCeIHD0VoyCZxVKsvotbaRdvQ-3VprQzAJUKrl2AR4v7S72sgd-oJLGCvy5nzdzzCQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+        ></a>
+        <div class="group1">
+          <p class="heading">Crio News Feed</p>
+          <div class="rect7"></div>
+        </div>
+        <div class="rect4"></div>
+      </nav>
+      <hr class="line1" />
+      <div class="today">Today</div>
+      <div class="insights">The insights you need to keep ahead.</div>
 
-        <div class="h1">Write your code in this file</div>
-        <script src="resources/data/magazines.js"></script>
-        <script src="resources/js/index.js"></script>
-        </body>
-        </html>
+      <div class="frame">
+        <div class="accordion" id="myAccordion">
+          <div class="box">
+            <div class="accordion-item" id="firstItem">
+              <h5 class="accordion-header">
+                <button
+                  type="button"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#covid"
+                  id="first"
+                >
+                  Covid-19
+                </button>
+              </h5>
+              <div
+                id="covid"
+                class="accordion-collapse collapse"
+                data-bs-parent="#myAccordion"
+              >
+                <div class="carousel slide" data-bs-ride="carousel"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="accordion-item">
+              <h5 class="accordion-header">
+                <button
+                  type="button"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sports"
+                >
+                  Sports
+                </button>
+              </h5>
+              <div
+                id="sports"
+                class="accordion-collapse collapse"
+                data-bs-parent="#myAccordion"
+              >
+                <div class="carousel slide" data-bs-ride="carousel"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="accordion-item">
+              <h5 class="accordion-header">
+                <button
+                  type="button"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#tech"
+                >
+                  Technology
+                </button>
+              </h5>
+              <div
+                id="tech"
+                class="accordion-collapse collapse"
+                data-bs-parent="#myAccordion"
+              >
+                <div class="carousel slide" data-bs-ride="carousel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="resources/data/magazines.js"></script>
+    <script src="resources/js/index.js"></script>
+  </body>
+</html>
